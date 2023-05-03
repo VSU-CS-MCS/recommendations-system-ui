@@ -1,0 +1,57 @@
+:root {
+    --indent: 15px;
+}
+
+.popUp {
+    position: fixed;
+}
+
+.popUp .backgroundDimming {
+    width: 100vw;
+    height: 100vh;
+
+    background: #000;
+    opacity: 50%;
+}
+
+.popUp .window {
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - var(--indent)), calc(-50% - var(--indent)));
+    background: #3EB3FB;
+    border-radius: calc(var(--indent)*2);
+    margin: var(--indent);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 730px) {
+    .popUp .window {
+        width: calc(100% - var(--indent)*2);
+        height: calc(500 * (100vw / 700));
+        border-radius: calc(var(--indent)*2 * (100vw / 700));
+    }
+}
+
+.popUp .backgroundImg {
+    display: block;
+    position: absolute;
+    width: calc(100% + var(--indent)*2);
+    height: calc(100% + var(--indent)*2);
+    background-size: cover;
+}
+
+.popUp .content {
+    position: relative;
+    width: calc(100% - var(--indent)*2);
+    height: calc(100% - var(--indent)*2);
+    padding: var(--indent);
+}
+
+.popUp .closeButton {
+    position: absolute;
+    right: var(--indent);
+}
