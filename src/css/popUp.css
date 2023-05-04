@@ -40,15 +40,3 @@
     height: 100%;
     background-size: cover;
 }
-
-.popUp .content {
-    position: relative;
-    width: calc(100% - var(--indentPX)*2);
-    height: calc(100% - var(--indentPX)*2);
-    padding: var(--indentPX);
-}
-
-.popUp .closeButton {
-    position: absolute;
-    right: var(--indentPX);
-}

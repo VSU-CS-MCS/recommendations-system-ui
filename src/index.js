@@ -4,6 +4,7 @@ import './css/index.css';
 import './css/popUp.css'
 import './css/closeButton.css'
 import './css/startButton.css'
+import './css/content.css'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

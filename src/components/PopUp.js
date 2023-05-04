@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "./Image";
+import Content from "./Content";
 import backgroundImg from "../img/background.png"
-import CloseButton from "./CloseButton";
 
 class PopUp extends React.Component {
     render () {
@@ -9,9 +9,7 @@ class PopUp extends React.Component {
             <div className="backgroundDimming"></div>
             <div className="window">
                 <Image image={backgroundImg} className={"backgroundImg"} />
-                <div className="content">
-                    <CloseButton onClick={this.props.hideFunc}/>
-                </div>
+                <Content hideFunc={this.props.hideFunc}/>
             </div>
         </div>)
     }
