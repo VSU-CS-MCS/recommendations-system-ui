@@ -9,6 +9,7 @@
     transition: all 0.2s ease;
     cursor: pointer;
     opacity: 70%;
+    z-index: 999;
 }
 
 .closeButton:hover {

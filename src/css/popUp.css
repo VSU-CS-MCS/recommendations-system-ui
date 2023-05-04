@@ -20,7 +20,7 @@
 }
 
 .popUp .window {
-    position: absolute;
+    position: fixed;
     display: block;
     width: var(--windowWidthPx);
     height: var(--windowHeightPx);
@@ -39,4 +39,17 @@
     width: 100%;
     height: 100%;
     background-size: cover;
+}
+
+.popUp .closeButton {
+    position: absolute;
+    right: var(--indentPX);
+    top: var(--indentPX);
+}
+
+.popUp .content {
+    position: relative;
+    width: calc(100% - var(--indentPX)*2);
+    height: calc(100% - var(--indentPX)*2);
+    padding: var(--indentPX);
 }
