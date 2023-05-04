@@ -1,0 +1,18 @@
+.hintsRow {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex: 1.5;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: end;
+
+    width: 85%;
+}
+
+.hintsRow .hint {
+    font-size: 30px;
+}
