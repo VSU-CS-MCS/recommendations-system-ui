@@ -38,7 +38,7 @@ button:active {
     opacity: 80%;
 }
 
-.hide {
+.hidden {
     display: none;
 }
 
