@@ -35,6 +35,28 @@ button:active {
     opacity: 80%;
 }
 
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
 .hidden {
     display: none;
+}
+
+.clickable {
+    opacity: 70%;
+    transition: all 0.2s ease;
+}
+
+.clickable:hover {
+    opacity: 100%;
+}
+
+.clickable:active  {
+    opacity: 80%;
+    transition: all 0.1s ease;
 }

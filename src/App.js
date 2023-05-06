@@ -12,14 +12,30 @@ class App extends React.Component {
         this.switchPopUpIsActive = this.switchPopUpIsActive.bind(this)
     }
 
+    componentDidMount() {
+        document.addEventListener("keydown", this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.handleKeyDown);
+    }
+
+    handleKeyDown = (e) => {
+        if (e.key === 'Escape') {
+            if (this.state.popUpIsActive) {
+                this.switchPopUpIsActive()
+            }
+        }
+    };
+
     render() {
-        return (<div>
+        return (<div onKeyDown={this.handleKeyDown}>
             <StartButton popUpIsActive={this.state.popUpIsActive} showFunc={this.switchPopUpIsActive}/>
             <PopUp popUpIsActive={this.state.popUpIsActive} hideFunc={this.switchPopUpIsActive}/>
         </div>)
     }
 
-    switchPopUpIsActive () {
+    switchPopUpIsActive = () => {
         this.setState({popUpIsActive: !this.state.popUpIsActive})
     }
 }

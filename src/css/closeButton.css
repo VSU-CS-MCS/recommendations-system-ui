@@ -6,14 +6,9 @@
 .closeButton {
     width: 30px;
     height: 30px;
-    transition: all 0.2s ease;
     cursor: pointer;
     opacity: 70%;
     z-index: 999;
-}
-
-.closeButton:hover {
-    opacity: 100%;
 }
 
 @media screen and (max-width: 730px) {

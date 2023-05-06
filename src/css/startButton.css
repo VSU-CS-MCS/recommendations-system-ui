@@ -7,12 +7,8 @@
     overflow: hidden;
     bottom: 15px;
     right: 15px;
-    opacity: 60%;
     transition: all 0.4s ease;
-}
-
-.startButton:hover {
-    opacity: 100%;
+    box-shadow: black 3px 3px 5px;
 }
 
 .startButton .startButtonImg {
