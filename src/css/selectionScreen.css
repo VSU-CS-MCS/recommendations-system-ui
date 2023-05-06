@@ -48,36 +48,6 @@
     width: 85%;
 }
 
-.selectionScreen .selectionButton {
-    width: 70px;
-    height: 70px;
-}
-
-.selectionScreen .selectionButton:hover {
-    width: 80px;
-    height: 80px;
-}
-
-.selectionScreen #sb1 {
-    background: #003584;
-}
-
-.selectionScreen #sb2 {
-    background: #003FAE;
-}
-
-.selectionScreen #sb3 {
-    background: #1259C9;
-}
-
-.selectionScreen #sb4 {
-    background: #2C73DE;
-}
-
-.selectionScreen #sb5 {
-    background: #458AF2;
-}
-
 .selectionScreen .buttonContainer {
     display: -webkit-flex;
     display: -moz-flex;

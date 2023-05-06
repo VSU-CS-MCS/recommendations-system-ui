@@ -1,0 +1,42 @@
+.selectionButton {
+    width: 70px;
+    height: 70px;
+}
+
+.selectionButton:hover {
+    width: 80px;
+    height: 80px;
+    box-shadow: #1358c0  5px 5px 10px;
+}
+
+.selectionButton:active {
+    width: 75px;
+    height: 75px;
+    box-shadow: #1358c0 3px 3px 7px;
+}
+
+.active {
+    width: 80px;
+    height: 80px;
+    box-shadow: #1358c0 5px 5px 10px;
+}
+
+#sb1 {
+    background: #003584;
+}
+
+#sb2 {
+    background: #003FAE;
+}
+
+#sb3 {
+    background: #1259C9;
+}
+
+#sb4 {
+    background: #2C73DE;
+}
+
+#sb5 {
+    background: #458AF2;
+}

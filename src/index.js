@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/selectionBar.css';
 import './css/selectionScreen.css'
+import './css/selectionButton.css'
 import './css/hintsRow.css'
 import './css/index.css';
 import App from './App';
