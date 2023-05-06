@@ -1,6 +1,38 @@
 * {
+    color: white;
+    font-family: 'Bree Serif', serif;
     margin: 0;
     padding: 0;
+}
+
+button {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+
+    border-radius: 50%;
+    border: white 3px solid;
+    font-style: normal;
+    font-size: 30px;
+
+    justify-content:center;
+    align-items: center;
+
+    cursor: pointer;
+    opacity: 70%;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 100%;
+}
+
+button:active {
+    transition: all 0.1s ease;
+    opacity: 80%;
 }
 
 .hidden {
